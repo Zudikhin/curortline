@@ -40,7 +40,6 @@ $(document).ready(function () {
         }
     });
 
-
     $('.destinations_slider').slick({
         infinite: true,
         slidesToScroll: 1,
@@ -73,7 +72,6 @@ $(document).ready(function () {
         ]
     });
 
-
     $('.reviews_block_slider').slick({
         infinite: true,
         slidesToScroll: 1,
@@ -98,6 +96,15 @@ $(document).ready(function () {
         ]
     });
 
-
+    $(".shop_block_main_item").each(function() {
+        $(this).find(".shop_block_main_item_slider").slick({
+            infinite: true,
+            slidesToScroll: 1,
+            slidesToShow: 1,
+            arrows: false,
+            fade: true,
+            dots: true
+        });
+    });
     
 });
